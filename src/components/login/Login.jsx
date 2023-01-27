@@ -5,7 +5,10 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import FormControl from "@mui/material/FormControl";
+import Button from "@mui/material/Button";
+
 import "./login.css";
+import { fontStyle, fontWeight } from "@mui/system";
 const Login = () => {
   return (
     <>
@@ -33,20 +36,37 @@ const Login = () => {
           />
           {/* //select */}
           <FormControl sx={{ m: 1, minWidth: 294 }}>
+            <InputLabel>Select Unit Name</InputLabel>
             <Select
-            //   displayEmpty
-                          className="select"
+              //   displayEmpty
+              className="select"
               inputProps={{ "aria-label": "Without label" }}
-              placeholder="Select Unit Name"
             >
               <MenuItem value="Select Unit Name">
-                <em>None</em>
+                <em>ss</em>
               </MenuItem>
               <MenuItem value={10}>Ten</MenuItem>
               <MenuItem value={20}>Twenty</MenuItem>
               <MenuItem value={30}>Thirty</MenuItem>
             </Select>
           </FormControl>
+          <div className="sign-btn">
+            <Button
+              variant="contained"
+              sx={{ m: 1, minWidth: 293 }}
+              style={{
+                backgroundColor: "#FC6964",
+                borderRadius: "12px",
+                boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                fontSize:"16px",
+                fontWeight: "700",
+                fontFamily: "Inter",
+                fontStyle:"normal"
+              }}
+            >
+              Sign In
+            </Button>
+          </div>
         </div>
       </div>
     </>
