@@ -8,7 +8,6 @@ import FormControl from "@mui/material/FormControl";
 import Button from "@mui/material/Button";
 
 import "./login.css";
-import { fontStyle, fontWeight } from "@mui/system";
 const Login = () => {
   return (
     <>
