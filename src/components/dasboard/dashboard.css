@@ -32,16 +32,48 @@
 
 /* Card-Space */
 .selection-card{
-    
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 101px;
-    width: 851px;
-    margin-left: 80px;
+    width: 880px;
+    margin-left: 70px;
     margin-top: -35px;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.detail-card{
+    background-color: #F0F6FE;
+    position: absolute;
+    z-index: -10;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 181px;
+    width: 880px;
+    margin-left: 70px;
+    margin-top: -35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    
+}
+.details{
+    margin-top: 75px;
 }
 
+.details h4{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #29375F;
+}
+.details p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #29375F;
+}
 .activity-card{
     display: flex;
     justify-content: right;
@@ -85,4 +117,21 @@
     font-size: 14px;
     font-weight: 400;
     margin-top: 3px;
+}
+
+.earning{
+    display: grid;
+    grid-template-columns: 57px auto;
+  
+}
+
+.selector{
+    
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.selector div{
+    margin: 2px;
 }
